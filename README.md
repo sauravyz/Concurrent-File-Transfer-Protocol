@@ -75,3 +75,9 @@ To handle race conditions between reading (downloading) and writing (deleting), 
 
 * **`DOWNLOAD` (Read Operation)**: Acquires a `shared_lock`. Multiple clients can acquire this lock on the same file, allowing for concurrent downloads.
 * **`DELETE` or `UPLOAD` (Write Operation)**: Acquires a `unique_lock`. This lock can only be obtained if **no other locks** are held. If a client is downloading a file, any request to delete it will be blocked until the download is complete, ensuring data integrity.
+* 
+---
+## Collaborators 
+
+* **Shivam Godayal** - [GitHub Profile](https://github.com/shivamgod9119)
+* **Saurav Chaudhary** - [GitHub Profile](https://github.com/sauravyz)
